@@ -1,0 +1,13 @@
+We can share resources in spok
+@Shared res = new VeryExpensiveResource()
+
+Then :
+thrown (Exception)
+
+Then :
+notThrown(Exception)
+
+we can do a cleanup and it should be the last block of code
+cleanup:
+file.delete
+
